@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name"> NYC Quiz</string>
+    <string name="question_1">What is the population of New York City?</string>
+    <string name="q_1_answer1">6.5 Million</string>
+    <string name="q_1_answer2">8.5 Million</string>
+    <string name="q_1_answer3">10.5 Million</string>
+    <string name="q_1_answer4">12.5 Million</string>
+    <string name="question_2">Which of the following skyscrapers are located in New York?</string>
+    <string name="q_2_answer1">Empire State Building</string>
+    <string name="q_2_answer2">Petronas Towers</string>
+    <string name="q_2_answer3">Bank of America Tower</string>
+    <string name="q_2_answer4">Chrysler Building</string>
+    <string name="question_3">How many taxicabs are operated in New York? </string>
+    <string name="q_3_answer1">    1.300 taxis</string>
+    <string name="q_3_answer2">   13.000 taxis</string>
+    <string name="q_3_answer3">  130.000 taxis</string>
+    <string name="q_3_answer4">1.300.000 taxis</string>
+    <string name="question_4">Which of the following boroughs is the largest by land area?</string>
+    <string name="q_4_answer1">Manhattan</string>
+    <string name="q_4_answer2">Brooklyn</string>
+    <string name="q_4_answer3">The Bronx</string>
+    <string name="q_4_answer4">Queens</string>
+    <string name="q_4_answer5">Staten Island</string>
+    <string name="question_5">The statue of liberty was a gift of which country?</string>
+    <string name="hint_statue">Enter your answer here</string>
+    <string name="result">Result</string>
+    <string name="toast_part_1">Your answers are\u0020</string>
+    <string name="toast_part_2_try_again">% correct. Come on. You can do better.</string>
+    <string name="toast_part_2_congratulations">% correct. Congratulations!!!</string>
+</resources>
