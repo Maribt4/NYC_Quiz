@@ -57,10 +57,10 @@ public class MainActivity extends AppCompatActivity {
     countCorrectAnswers(hasQuestion1Correct,  hasQuestion2answer1Correct,  hasQuestion2answer2Correct,
          hasQuestion2answer3Correct,  hasQuestion2answer4Correct,  hasQuestion3Correct,
          hasQuestion4Correct,  Question5Input);
-    if (correctAnswers < 8){
-        Toast.makeText(this, getString(R.string.toast_part_1) + correctAnswers*100/8 + getString(R.string.toast_part_2_try_again), Toast.LENGTH_LONG).show();
+    if (correctAnswers < 5){
+        Toast.makeText(this, getString(R.string.toast_part_1) + correctAnswers*100/5 + getString(R.string.toast_part_2_try_again), Toast.LENGTH_LONG).show();
         correctAnswers = 0;}
-    else {Toast.makeText(this, getString(R.string.toast_part_1) + correctAnswers*100/8 + getString(R.string.toast_part_2_congratulations), Toast.LENGTH_LONG).show();
+    else {Toast.makeText(this, getString(R.string.toast_part_1) + correctAnswers*100/5 + getString(R.string.toast_part_2_congratulations), Toast.LENGTH_LONG).show();
         correctAnswers = 0;}
     }
 
@@ -71,10 +71,7 @@ public class MainActivity extends AppCompatActivity {
                                      boolean hasQuestion2answer3Correct, boolean hasQuestion2answer4Correct, boolean hasQuestion3Correct,
                                      boolean hasQuestion4Correct, String Question5Input){
         if (hasQuestion1Correct){correctAnswers = correctAnswers +1;}
-        if (hasQuestion2answer1Correct){correctAnswers = correctAnswers +1;}
-        if (!hasQuestion2answer2Correct){correctAnswers = correctAnswers +1;}
-        if (hasQuestion2answer3Correct){correctAnswers = correctAnswers +1;}
-        if (hasQuestion2answer4Correct){correctAnswers = correctAnswers +1;}
+        if ((hasQuestion2answer1Correct) && (!hasQuestion2answer2Correct) && (hasQuestion2answer3Correct) && (hasQuestion2answer4Correct)){correctAnswers = correctAnswers +1;}
         if (hasQuestion3Correct){correctAnswers = correctAnswers +1;}
         if (hasQuestion4Correct){correctAnswers = correctAnswers +1;}
         if (Question5Input.equals("France")){correctAnswers = correctAnswers +1;}
